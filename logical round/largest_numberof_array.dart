@@ -10,14 +10,14 @@ void main()
   int i;
   int max=0;
   int num;
-  for(i=0;i<=n;i++)
+  for(i=0;i<n;i++)
   {
      stdout.write("enter the element of a[$i]:");
       num=int.parse(stdin.readLineSync()!);
      l1.add(num);
   }
  
-  for(i=0;i<=n;i++)
+  for(i=0;i<n;i++)
   {
     if(l1[i]>max)
     {
