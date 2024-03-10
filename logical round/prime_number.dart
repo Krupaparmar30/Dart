@@ -2,25 +2,27 @@
 import 'dart:io';
 void main()
 {
-  int revers=0;
-  int remainder;
-  stdout.write("enter the value of n:");
-  int a=int.parse(stdin.readLineSync()!);
-  int n=a;
-  while(n>=9)
+  
+ var i,num,j,n;
+ var prime=0;
+ stdout.write("enter the array size:");
+ n=int.parse(stdin.readLineSync()!);
+ 
+ 
+  for(i=2;i<=n/i;i++)
+    {
+      if(n%2==0)
+      {
+      prime++;
+      }
+    }
+ 
+  if(prime==0)
   {
-
-     remainder=n % 10;
-  	 revers=revers*10+ remainder;
-  	 n=n~/10;
-  }
-  if(revers==0)
-  {
-    print("this is prime value:");
+    print("$n is prime number!!!");
   }
   else{
-    
-print("this is not  prime value:");
+     print("$n is not prime number!!!");
   }
 
   
